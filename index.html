@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avya Nand | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:#ffffff;
+      line-height:1.6;
+      scroll-behavior:smooth;
+    }
+
+    a{
+      text-decoration:none;
+      color:white;
+    }
+
+    header{
+      width:100%;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px;
+      background:linear-gradient(to right,#020617,#0f172a,#1e293b);
+    }
+
+    .hero{
+      max-width:1200px;
+      width:100%;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:50px;
+      align-items:center;
+    }
+
+    .hero-text h1{
+      font-size:60px;
+      margin-bottom:10px;
+    }
+
+    .hero-text h2{
+      font-size:28px;
+      color:#38bdf8;
+      margin-bottom:20px;
+    }
+
+    .hero-text p{
+      color:#cbd5e1;
+      margin-bottom:30px;
+      max-width:600px;
+    }
+
+    .btns{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:12px 28px;
+      border-radius:10px;
+      font-weight:600;
+      transition:0.3s ease;
+    }
+
+    .primary{
+      background:#38bdf8;
+      color:#0f172a;
+    }
+
+    .secondary{
+      border:2px solid #38bdf8;
+    }
+
+    .btn:hover{
+      transform:translateY(-4px);
+    }
+
+    .hero-img img{
+      width:100%;
+      max-width:380px;
+      border-radius:20px;
+      border:4px solid #38bdf8;
+      box-shadow:0 0 40px rgba(56,189,248,0.4);
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .section-title{
+      font-size:38px;
+      margin-bottom:40px;
+      text-align:center;
+      color:#38bdf8;
+    }
+
+    .about p{
+      max-width:900px;
+      margin:auto;
+      text-align:center;
+      color:#cbd5e1;
+    }
+
+    .skills-grid,
+    .project-grid,
+    .cert-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:18px;
+      transition:0.3s ease;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card h3{
+      margin-bottom:12px;
+      color:#38bdf8;
+    }
+
+    .card p{
+      color:#cbd5e1;
+      font-size:15px;
+    }
+
+    .timeline{
+      display:flex;
+      flex-direction:column;
+      gap:25px;
+    }
+
+    .timeline-item{
+      background:#1e293b;
+      padding:25px;
+      border-left:5px solid #38bdf8;
+      border-radius:12px;
+    }
+
+    .timeline-item h3{
+      margin-bottom:8px;
+      color:#38bdf8;
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin-bottom:12px;
+      color:#cbd5e1;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#020617;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+      .hero-text h1{
+        font-size:42px;
+      }
+
+      .hero-text h2{
+        font-size:22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+
+    <div class="hero-text">
+      <h1>Avya Nand</h1>
+      <h2>B.Tech CSE Student & Aspiring Software Developer</h2>
+
+      <p>
+        Passionate about technology, software development,
+        artificial intelligence, and solving real-world problems
+        through innovative digital solutions.
+      </p>
+
+      <div class="btns">
+        <a href="https://www.linkedin.com/in/avya-nand" target="_blank" class="btn primary">LinkedIn</a>
+        <a href="https://github.com/avya1423" target="_blank" class="btn secondary">GitHub</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="avya.jpg" alt="Avya Nand">
+    </div>
+
+  </div>
+</header>
+
+<section class="about">
+  <h2 class="section-title">About Me</h2>
+
+  <p>
+    I am a Computer Science Engineering student with a strong interest in
+    software development, modern web technologies, and emerging technologies.
+    I continuously work on improving my technical, communication, and
+    problem-solving skills through projects and learning.
+  </p>
+</section>
+
+<section>
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="card">
+      <h3>Frontend</h3>
+      <p>HTML, CSS, JavaScript, Responsive Design</p>
+    </div>
+
+    <div class="card">
+      <h3>Tools</h3>
+      <p>GitHub, Firebase, MS Office</p>
+    </div>
+
+    <div class="card">
+      <h3>Programming</h3>
+      <p>C#, Programming Fundamentals</p>
+    </div>
+
+    <div class="card">
+      <h3>Soft Skills</h3>
+      <p>Leadership, Teamwork, Communication, Problem Solving</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="card">
+      <h3>Gearless Power Transmission</h3>
+      <p>Engineering project based on transmitting power without using gears.</p>
+    </div>
+
+    <div class="card">
+      <h3>Piezoelectric Power Generator</h3>
+      <p>A project focused on generating electricity using pressure-based systems.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Education</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h3>LNCT&S Bhopal</h3>
+      <p>B.Tech Computer Science Engineering (2025–2028)</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Government Polytechnic Jehanabad</h3>
+      <p>Diploma Mechanical Engineering | CGPA: 7.91</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Certifications</h2>
+
+  <div class="cert-grid">
+
+    <div class="card">
+      <h3>Microsoft</h3>
+      <p>Foundational C# Certification</p>
+    </div>
+
+    <div class="card">
+      <h3>Tata Group</h3>
+      <p>Cybersecurity Analyst Simulation</p>
+    </div>
+
+    <div class="card">
+      <h3>AWS APAC</h3>
+      <p>Solutions Architecture Virtual Experience</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <p><strong>Email:</strong> avya22me47@gmail.com</p>
+  <p><strong>Phone:</strong> 6205285534</p>
+  <p><strong>LinkedIn:</strong> linkedin.com/in/avya-nand</p>
+  <p><strong>GitHub:</strong> github.com/avya1423</p>
+</section>
+
+<footer>
+  <p>© 2026 Avya Nand | Portfolio Website</p>
+</footer>
+
+</body>
+</html>
